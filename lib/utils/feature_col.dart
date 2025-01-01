@@ -1,6 +1,5 @@
 import 'package:auto_size_text/auto_size_text.dart';
 import 'package:flutter/material.dart';
-import 'package:profile_assign/constants/paths.dart';
 import 'package:profile_assign/constants/text.dart';
 import 'package:profile_assign/constants/text_styles.dart';
 import 'package:svg_flutter/svg.dart';
@@ -111,8 +110,9 @@ class FeatureCol extends StatelessWidget {
                                   child: Center(
                                     child: Text(
                                       AppText.cool,
-                                      style: AppTextStyles.normalText
-                                          .copyWith(color: Colors.white),
+                                      style: AppTextStyles.boldText.copyWith(
+                                          fontWeight: FontWeight.w600,
+                                          color: Colors.white),
                                     ),
                                   ))),
                         )
